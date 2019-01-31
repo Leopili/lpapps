@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block title %} Apps {% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/home.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Apps</h1>
+<span class="subheading">Turnos</span>
+{% endblock %}
+
+{% block content %}
+	<p>La aplicación de turnos fue diseñada especialmente para agilizar las tareas de cualquier consultorio médico, lo que no la limita a otras especialidades o actividades que requieran de la solicitud de turnos. En la página principal se encuentra la opción de registrarse, iniciar sesión y contactarse. Una vez dentro se encuentra el apartado perfil, en donde cada paciente carga sus datos principales. En el apartado turnos, se verá los turnos disponibles o el turno reservado. Una característica importante de este sistema es que si un paciente ya reservó un turno no puede reservar otro a menos que cancele el que tiene asignado. En la sección de contacto se encuentran los principales medio de comunicación y una sección en donde los pacientes le pueden enviar un mensaje que le llega a su casilla de correo electrónico. El usuario principal que tiene acceso a la pagina de administración verá en la página principal una pestaña con el nombre de agenda en donde se listan los turnos registrados, que paciente tiene cada turno y un link a los datos del paciente. Entrando a la página de administración (usuario principal) se crean los turnos con fecha y hora, los cuáles serán visibles en el apartado Turnos - Turnos Disponibles</p>
+	<p>Existen dos modalidades de pago, las cuales varían de acuerdo al domino de la página web desde donde se accede a la aplicación:</p>
+		<article>
+			<h6>La primer opción es con un dominio propio (Ej: wwww.nombrequedesee.com) la cual tiene un costo inicial y por unica de vez de $ 1.000 y luego $ 600 mensuales.</h6>
+		</article>
+		<article>
+			<h6>La segunda opción es con un dominio gratuito el cual se obtiene del sitio que aloja la aplicación (Ej: nombrequedesee.pythonanywhere.com) esta opción tiene un costo de $ 500 mensuales.</h6>
+		</article>
+		<h6>Cualquier duda o inquietud puede enviarnos su consulta al (0223) 155-288445 o lpturnos@gmail.com</h6>
+		
+{% endblock %}

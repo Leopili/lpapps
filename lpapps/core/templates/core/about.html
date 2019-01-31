@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+
+{% block title %} Acerca de {% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/apps.jpg' %}{% endblock %}
+
+
+{% block headers%}
+<h2>Quienes Somos</h2>
+<span class="subheading">LPAPPS</span>
+{% endblock %}
+
+{% block content %}
+<div class= "row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/apps2.jpg'%}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">LPAPPS</h2>   
+        <p>LPAPPS es un emprendimiento personal radicado en la ciudad de Mar del Plata, Buenos Aires, Argentina dedicado al desarrollo de aplicaciones y páginas web. Está pensado para ofrecer soluciones tecnológicas a tareas cotidianas. Con el objetivo de brindar un servicio simple de utilizar, pero efectivo y conciso. </p>
+        <p> En el apartado de apps encontrarán todas las aplicaciones desarrolladas. Si desea alguna aplicación o poseen una idea que no encuentra en el listado de aplicaciones, no duden en contactarse y con gusto evaluaremos la factibilidad de realizarla o acercarle la información necesaria. </p>
+    </div>
+</div>
+{% endblock %}
